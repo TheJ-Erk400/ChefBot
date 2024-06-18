@@ -12,7 +12,7 @@ client=Groq(
 st.set_page_config(page_title="ChefBot👨‍🍳")
 st.sidebar.title('MENU BAR')
 choice = st.sidebar.selectbox(' ', ('About Developer 👨‍💻', 'About the Project 📊'))
-st.sidebar.image('')
+# st.sidebar.image('')
 
 if choice == 'About Developer 👨‍💻':
     st.title('About the Developer')
