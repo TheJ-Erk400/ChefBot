@@ -11,8 +11,8 @@ client=Groq(
 
 st.set_page_config(page_title="ChefBot👨‍🍳")
 st.sidebar.title('MENU BAR')
-choice = st.sidebar.selectbox(' ', ('About Developer 👨‍💻'))
-st.sidebar.image('https://www.google.com/imgres?q=chole%20bhature%20image&imgurl=https%3A%2F%2Fstatic.toiimg.com%2Fphoto%2F98230357.cms&imgrefurl=https%3A%2F%2Ftimesofindia.indiatimes.com%2Flife-style%2Ffood-news%2Fthis-is-how-chole-bhatura-came-to-india%2Fphotostory%2F98230348.cms&docid=u54M5ugLzhGQYM&tbnid=QmgOApTDYCG5iM&vet=12ahUKEwid-47UseWGAxUsZ_UHHVLcD10QM3oECHsQAA..i&w=1200&h=900&hcb=2&ved=2ahUKEwid-47UseWGAxUsZ_UHHVLcD10QM3oECHsQAA')
+choice = st.sidebar.selectbox(' ', ('About Developer 👨‍💻', 'About the Project 📊'))
+st.sidebar.image('')
 
 if choice == 'About Developer 👨‍💻':
     st.title('About the Developer')
@@ -23,6 +23,13 @@ if choice == 'About Developer 👨‍💻':
     st.markdown('[Kaggle](https://www.kaggle.com/divu2001)')
     st.markdown('[LinkedIn](www.linkedin.com/in/divyanshu-mittal-4b652228a)')
     st.markdown('Email: msa23021@iiitl.ac.in')
+
+elif choice == 'About the Project 📊':
+    st.title('About the Project')
+    st.image('https://wallpapers.com/images/featured/airport-w6v47yjhxcohsjgf.jpg')
+    st.header('OVERVIEW:')
+    st.text('A Streamlit app for generating the recipe for any dish.')
+    st.text('This app makes things easy when planning to cook anything.')
 
 input_text=st.text_input("Name the Dish")
 prompt=PromptTemplate(
