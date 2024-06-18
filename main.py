@@ -40,7 +40,7 @@ elif choice == 'About Developer 👨‍💻':
     st.text('Education: Master in AI & ML from Indian Institute of Information Technology, Lucknow🎓')
     st.markdown('[GitHub](https://github.com/d01mittal)')
     st.markdown('[Kaggle](https://www.kaggle.com/divu2001)')
-    st.markdown('[LinkedIn](www.linkedin.com/in/divyanshu-mittal-4b652228a)')
+    st.markdown('[LinkedIn](https://www.linkedin.com/in/divyanshu-mittal-4b652228a/)')
     st.markdown('Email: msa23021@iiitl.ac.in')
 
 elif choice == 'About the Project 📊':
