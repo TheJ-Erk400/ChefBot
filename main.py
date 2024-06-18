@@ -35,7 +35,7 @@ if choice == 'Predict 🍕':
                                     
 elif choice == 'About Developer 👨‍💻':
     st.title('About the Developer')
-    st.image('https://drive.google.com/file/d/1kXMlKgwHB7WXjJaCNvEeb_GRb3QVFLGw/view?usp=sharing')
+    st.image('https://avatars.githubusercontent.com/u/144702542?s=400&u=7b9a66094d0684cc83d0d13444b8eaddbc0833c9&v=4')
     st.text('Name: Divyanshu Mittal')
     st.text('Education: Master in AI & ML from Indian Institute of Information Technology, Lucknow🎓')
     st.markdown('[GitHub](https://github.com/d01mittal)')
