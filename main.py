@@ -11,10 +11,17 @@ client=Groq(
 
 st.set_page_config(page_title="ChefBot👨‍🍳")
 st.sidebar.title('MENU BAR')
-choice = st.sidebar.selectbox(' ', ('About Developer 👨‍💻', 'About the Project 📊'))
+choice = st.sidebar.selectbox(' ', ('Predict 🍕', About Developer 👨‍💻', 'About the Project 📊'))
 # st.sidebar.image('')
-
-if choice == 'About Developer 👨‍💻':
+                                    
+if choice == 'Predict 🍕':
+    input_text=st.text_input("Name the Dish")
+    prompt=PromptTemplate(
+        input_variables=["name"],
+        template="Tell me how to make the dish named {name}"
+    )                           
+                                    
+elif choice == 'About Developer 👨‍💻':
     st.title('About the Developer')
     st.image('https://media.licdn.com/media/AAYQAQSOAAgAAQAAAAAAAB-zrMZEDXI2T62PSuT6kpB6qg.png')
     st.text('Name: Divyanshu Mittal')
@@ -30,12 +37,6 @@ elif choice == 'About the Project 📊':
     st.header('OVERVIEW:')
     st.text('A Streamlit app for generating the recipe for any dish.')
     st.text('This app makes things easy when planning to cook anything.')
-
-input_text=st.text_input("Name the Dish")
-prompt=PromptTemplate(
-    input_variables=["name"],
-    template="Tell me how to make the dish named {name}"
-)
 
 llm=ChatGroq(
     api_key=groq_key,
