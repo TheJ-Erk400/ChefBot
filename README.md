@@ -1,4 +1,4 @@
-# ChefBot
+# ChefBot👨‍🍳
 
 Link for Streamlit app:- https://chefbot.streamlit.app/
 
